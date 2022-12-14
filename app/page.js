@@ -11,5 +11,5 @@ async function getData() {
 
 export default async function Page() {
   const data = await getData();
-  return <span>{JSON.stringify(data, null, 1)}</span>;
+  return <span>{JSON.stringify(data)}</span>;
 }
